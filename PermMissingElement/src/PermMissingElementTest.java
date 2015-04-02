@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class SolutionTest {
+public class PermMissingElementTest {
 	
 	Solution solution;
 	int[] A;
@@ -51,7 +51,7 @@ public class SolutionTest {
 		A[1] = 7;
 		A[2] = 9;
 		A[3] = 10;
-		assertEquals(8, solution.solution(A));
+		assertEquals(1, solution.solution(A));
 	}
 	
 	
@@ -111,6 +111,14 @@ public class SolutionTest {
 		A = new int[2];
 		A[0]=2;
 		A[1]=4;
+		assertEquals(1,solution.solution(A));
+	}	
+	
+	@Test
+	public void testNoMissing(){
+		A = new int[2];
+		A[0]=1;
+		A[1]=2;
 		assertEquals(3,solution.solution(A));
 	}	
 
