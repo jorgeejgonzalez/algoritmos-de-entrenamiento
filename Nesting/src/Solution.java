@@ -22,10 +22,10 @@ public class Solution {
 					  openings.pop();
 			  });
 		
-		if(openings.size()>0)
-			return 0;
-		else
+		if(openings.size()==0)
 			return 1;
+		else
+			return 0;
 	}
 
 }
